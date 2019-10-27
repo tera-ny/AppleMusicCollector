@@ -1,0 +1,37 @@
+name: AppleMusicCollector
+fileGroups:
+  - configs
+configFiles:
+  Debug: configs/Debug.xcconfig
+  Release: configs/Release.xcconfig
+targets:
+  AppleMusicCollector:
+    type: application
+    platform: iOS
+    sources:
+     - AppleMusicCollector
+     - Infrastructure
+    settings:
+      CURRENT_PROJECT_VERSION: "1"
+      INFOPLIST_FILE: AppleMusicCollector/info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: org.g4zeru.AppleMusicCollector
+      SWIFT_VERSION: "5.0"
+      IPHONEOS_DEPLOYMENT_TARGET: "13.0."
+  AppleMusicCollectorTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: AppleMusicCollectorTests
+    dependencies:
+      - target: AppleMusicCollector
+    scheme:
+      testTargets:
+        - target: AppleMusicCollectorTests
+  AppleMusicCollectorUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: AppleMusicCollectorUITests
+    dependencies:
+      - target: AppleMusicCollector
+    scheme:
+      testTargets:
+        - target: AppleMusicCollectorUITests

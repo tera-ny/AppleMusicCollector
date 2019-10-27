@@ -1,0 +1,9 @@
+// Generated using xcconfig-extractor 0.5.0 by Toshihiro Suzuki - https://github.com/toshi0383/xcconfig-extractor
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/AppleMusicCollector.app/AppleMusicCollector
+INFOPLIST_FILE = AppleMusicCollectorTests/Info.plist
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+IPHONEOS_DEPLOYMENT_TARGET = 13.1
+PRODUCT_BUNDLE_IDENTIFIER = com.g4zeru.AppleMusicCollectorTests
+BUNDLE_LOADER = $(TEST_HOST)
+

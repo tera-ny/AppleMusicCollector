@@ -1,0 +1,7 @@
+// Generated using xcconfig-extractor 0.5.0 by Toshihiro Suzuki - https://github.com/toshi0383/xcconfig-extractor
+TEST_TARGET_NAME = AppleMusicCollector
+INFOPLIST_FILE = AppleMusicCollectorUITests/Info.plist
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+PRODUCT_BUNDLE_IDENTIFIER = com.g4zeru.AppleMusicCollectorUITests
+
