@@ -7,8 +7,8 @@
 
 import Foundation
 
-protocol Audio {
-    var storeID: String { get }
-    var title: String { get }
-    var artist: String { get }
+struct Audio {
+    var storeID: String
+    var title: String
+    var artist: String
 }

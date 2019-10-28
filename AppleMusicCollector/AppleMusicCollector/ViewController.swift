@@ -18,8 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(MPMediaItem.fetchLastPlayedMediaItem()?.title)
-        print(MPMediaItem.fetchLastPlayedMediaItem()?.lastPlayedDate)
+        
     }
 }
 
