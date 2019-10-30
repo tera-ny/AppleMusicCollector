@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
-
+    let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
+        LocationFetcher.shared.currentLocation.subscribe(onNext: { location in
+                print(location)
+            }).disposed(by: disposeBag)
+        LocationFetcher.shared.startRequest()
         // Do any additional setup after loading the view.
     }
-
-
 }
 
