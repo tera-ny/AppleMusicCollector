@@ -8,17 +8,18 @@
 
 import UIKit
 import MediaPlayer
+import RxSwift
 
 class ViewController: UIViewController {
-
+    let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+        LocationFetcher.shared.currentLocation
+            .subscribe(onNext: { location in
+                print(location)
+            })
+            .disposed(by: disposeBag)
+        LocationFetcher.shared.startRequest()
     }
 }
 

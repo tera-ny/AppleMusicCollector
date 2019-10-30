@@ -1,14 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '13.0'
 use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
 
 abstract_target 'ReactiveExtension' do
   pod 'RxSwift', '~>5.0.0'
   pod 'RxCocoa', '~>5.0.0'
   
   abstract_target 'Infrastructure' do
-    pod 'Firebase/Firestore'
-    pod 'Firebase/Auth'
     target 'AppleMusicCollector' do
       # Comment the next line if you don't want to use dynamic frameworks
 
@@ -16,7 +15,7 @@ abstract_target 'ReactiveExtension' do
 
       target 'AppleMusicCollectorTests' do
         inherit! :search_paths
-        # Pods for testing
+        pod 'Nimble'
       end
 
       target 'AppleMusicCollectorUITests' do
