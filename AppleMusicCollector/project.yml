@@ -13,10 +13,10 @@ targets:
      - Infrastructure
     settings:
       CURRENT_PROJECT_VERSION: "1"
-      INFOPLIST_FILE: AppleMusicCollector/info.plist
+      INFOPLIST_FILE: AppleMusicCollector/Info.plist
       PRODUCT_BUNDLE_IDENTIFIER: org.g4zeru.AppleMusicCollector
       SWIFT_VERSION: "5.0"
-      IPHONEOS_DEPLOYMENT_TARGET: "13.0."
+      IPHONEOS_DEPLOYMENT_TARGET: "13.0"
   AppleMusicCollectorTests:
     type: bundle.unit-test
     platform: iOS

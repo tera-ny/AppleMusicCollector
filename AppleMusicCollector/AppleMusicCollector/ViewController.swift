@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import MediaPlayer
 import RxSwift
+import CoreLocation
 
 class ViewController: UIViewController {
     let disposeBag = DisposeBag()
